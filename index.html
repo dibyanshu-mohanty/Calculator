@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" href="calculator.png">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cal ml-auto mr-auto z-depth-5" style="width: 330px;margin-top: 15%;padding: 15px;">
+            <input id="io" type="text" placeholder="0" style="border: none; width: 260px; font-size: 40px; text-align: right;">
+            <div class="col s12">
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(7)">7</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(8)">8</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(9)">9</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark deep-orange lighten-1" onclick="numPressed('/')">/</button>
+            </div>
+            <div class="col">
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(4)">4</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(5)">5</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(6)">6</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark orange darken-1" onclick="numPressed('*')">*</button>
+            </div>
+            <div class="col">
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(1)">1</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(2)">2</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(3)">3</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark orange accent-4" onclick="numPressed('-')">-</button>
+            </div>
+            <div class="col">
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed(0)">0</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="numPressed('.')">.</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark grey lighten-4" style="color: black;" onclick="clearPressed()">C</button>
+                <button class="btn-floating btn-large mt-3 mr-2 z-depth-2 waves-effect waves-dark deep-orange accent-3" onclick="numPressed('+')">+</button>
+            </div>
+            <div class="col">
+                <button class="btn-dark btn-large mt-3 mr-2 z-depth-2 waves-effect waves-light purple lighten-1" style="width: 95%;" onclick="equalPressed()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
