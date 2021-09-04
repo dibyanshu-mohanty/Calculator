@@ -9,9 +9,10 @@ function numPressed(num){
 function equalPressed(){
     result = (eval(result)).toFixed(2)
     input.value = result
+    result=""
 }
 
 function clearPressed(){
-    result = "0"
+    result = ""
     input.value = result
 }
